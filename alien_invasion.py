@@ -6,7 +6,7 @@ from settings import Settings
 from ship import Ship
 
 class AlienInvasion:
-    """Overall class to mnanage game assets and behavior."""
+    """Overall class to manage game assets and behavior."""
 
     def __init__(self):
         """Initialize the game, and create game resources."""
