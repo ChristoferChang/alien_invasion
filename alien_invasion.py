@@ -16,6 +16,8 @@ class AlienInvasion:
 
         self.screen = pygame.display.set_mode(
             (self.settings.screen_width, self.settings.screen_height))
+        # Fullscreen mode
+        # self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
         pygame.display.set_caption("Alien Invasion")
 
         self.ship = Ship(self)
