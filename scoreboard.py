@@ -75,7 +75,7 @@ class Scoreboard:
         self.screen.blit(self.high_score_image, self.high_score_rect)
         self.screen.blit(self.level_image, self.level_rect)
         self.ships.draw(self.screen)
-        
+
     def check_high_score(self):
         """Check to see if there is a new high score."""
         if self.stats.score > self.stats.high_score:
