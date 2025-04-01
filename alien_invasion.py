@@ -85,6 +85,10 @@ class AlienInvasion:
             self._create_fleet()
             self.settings.increase_speed()
 
+            # Increase level.
+            self.stats.level += 1
+            self.sb.prep_level()
+
     def _update_aliens(self):
         """Update the positions of all aliens in the fleet"""
         self._check_fleet_edges()
@@ -220,6 +224,7 @@ class AlienInvasion:
             self.settings.initialize_dynamic_settings()
             self._start_game()
             self.sb.prep_score()
+            self.sb.prep_level()
     
     def _fire_bullet(self):
         """Create a new bullet and add it to the bullets group"""
