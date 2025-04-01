@@ -106,6 +106,7 @@ class AlienInvasion:
         if self.stats.ships_left > 0:
             # Decrease ship lives
             self.stats.ships_left -= 1
+            self.sb.prep_ships()
 
             # Remove remaining bullets and aliens.
             self.bullets.empty()
@@ -225,6 +226,7 @@ class AlienInvasion:
             self._start_game()
             self.sb.prep_score()
             self.sb.prep_level()
+            self.sb.prep_ships()
     
     def _fire_bullet(self):
         """Create a new bullet and add it to the bullets group"""
